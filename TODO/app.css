@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: darkslategrey;
+}
+.main {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.addTodoSection {
+  position: relative;
+  flex: 1;
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+.contextMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 20px;
+  background-color: whitesmoke;
+  height: fit-content;
+  width: 80%;
+  gap: 20px;
+}
+.contextMenuInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+label {
+  font-size: 20px;
+  color: chocolate;
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  height: 50px;
+  font-size: medium;
+}
+.contextMenuButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.buttons {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  align-self: flex-end;
+  background-color: chocolate;
+  color: wheat;
+  font-size: 20px;
+}
+.buttons:hover {
+  background-color: wheat;
+  color: chocolate;
+}
+.showTodoSection {
+  flex:1;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showTodo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: whitesmoke;
+  height: fit-content;
+  width: 80%;
+  gap: 5px;
+  visibility: none;
+}
+ol {
+  list-style-type: none;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  margin: 5px;
+  padding: 8px;
+  border: 2px solid gold;
+  border-radius: 2px;
+  height: fit-content;
+  width: 80%;
+}
+.cancelButton{
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: white;
+    width: 75px;
+    height: 50px;
+
+}
+.cancelButton:hover{
+    background-color: blueviolet;
+
+
+}
