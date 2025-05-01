@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
+    
+}
+.main-frame{
+    margin-top: 100px;
+    width: 400px;
+    height: 600px;
+    background-color:  black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start   ;
+    flex-wrap: wrap;
+    gap: 2px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.output{
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: end;
+    vertical-align: middle;
+    line-height: 90px;
+    font-size: 50px;
+}
+.container{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 95px;
+    height: 90px;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container:hover{
+    cursor: pointer;
+}
+.bluebox{
+    background-color: aqua;
+    font-size: 40px;
+
+}
+.bluebox:hover , .greenbox:hover , .orangebox:hover{
+    background-color: fuchsia;
+    color: white;
+}
+.greenbox{
+    background-color: darkgreen;
+    font-size: 50px;
+    color: white;
+}
+
+.orangebox{
+    background-color: darkorange;
+    font-size: 50px;
+}
+.zeroButton{
+    flex:2;
+}
+
+
