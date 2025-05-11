@@ -6,11 +6,17 @@
 .menu {
   min-height: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   background-color: darkslategrey;
   width: 100%;
+}
+ul {
+  display: flex;
+  background-color: darkslategrey;
+  gap: 1rem;
 }
 label {
   color: white;
@@ -37,6 +43,13 @@ label {
   align-items: center;
   background-color: white;
   border: 1px solid black;
+}
+ul {
+  list-style: none;
+}
+.colorBox {
+  width: 2rem;
+  height: 2rem;
 }
 
 .grid-cell {

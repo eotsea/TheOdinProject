@@ -1,0 +1,238 @@
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+  font-family: Roboto;
+  ul {
+    list-style-type: none;
+  }
+  --orange-color: #ff9f00;
+  --sidebar-color: #129990;
+  --sideBar-hover-color: #FFFBDE;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.dashBoard {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+}
+.logo {
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar {
+  background-color: var(--sidebar-color);
+  color: white;
+  display: grid;
+  padding: 1rem;
+  align-items: start;
+}
+.sidebar ul {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0.2em;
+}
+
+.sidebar ul li:hover {
+  cursor: pointer;
+  background-color: var(--sideBar-hover-color);
+  color: var(--orange-color);
+  .sidebarIcon{
+    fill: var(--orange-color);
+  }
+  .logo{
+    fill: var(--orange-color);
+  }
+}
+
+.sidebarIcon {
+  width: 1rem;
+  height: 1rem;
+  fill: white;
+}
+.dashLogo {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+.mainBar {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-content: start;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  padding: 0.5rem;
+  display: grid;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.51);
+  width: fit-content;
+}
+.searchBar {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+.inputField {
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 1rem calc(100% - 10rem);
+  gap: 4px;
+}
+input {
+  height: 1rem;
+  border-radius: 0.4rem;
+}
+
+.user {
+  margin-left: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  align-items: center;
+  gap: 4px;
+}
+.userGreeting{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.searchIcon {
+  display: grid;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+}
+.ppSmall {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.1rem solid var(--orange-color);
+}
+.ppBIG {
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.1rem solid var(--orange-color);
+}
+.userProfile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.userProfileIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 40%;
+  border: 0.2rem dashed var(--orange-color);
+}
+.userProfileBigIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 40%;
+  border: 0.2rem dashed var(--orange-color);
+}
+.UserInfo {
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+}
+.UserInfo ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+.UserInfo ul li {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.UserInfo ul li button {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+.content {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  padding: 1rem;
+}
+.projects {
+  grid-column: 1/1;
+  display: grid;
+  align-content: start;
+
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  border-radius: 0 1rem 1rem 0;
+  box-sizing: border-box;
+  position: relative;
+  height: 8rem;
+  width: 30ch;
+  padding: 1em;
+  font-size: 1rem;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -0.3rem;
+  z-index: -1;
+  width: 1rem;
+  height: 8rem;
+  background-color: var(--orange-color);
+  border-radius: 1rem;
+}
+.cardText{
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.funcIcon{
+  width: 1rem;
+}
+.functions{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  gap: 1rem;
+  justify-self: end;
+}
+
+.announcements{
+  justify-self: start;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.announcements-items{
+  background-color: white;
+  padding: 1rem;
+  display: grid;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  gap: 1rem ;
+}
+.trending{
+  grid-column: 2/3;
+}
