@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <dialog class="addDialog">
+      <label for="bookTitle"></label>
+      <input type="text" name="bookTitle">
+      <label for="author"></label>
+      <input type="text" name="author">
+      <label for="page"></label>
+      <input type="number" name="page">
+      <button class="closeDialog">close</button>
+      <button class="addBook" formmethod="dialog">add</button>
+    </dialog>
+    <button id="addButton" onclick="document.querySelector('dialog').showModal()" class="addButton">Add</button>
+</body>
+</html>

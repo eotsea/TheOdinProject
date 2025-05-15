@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  row-gap: 1rem;
+  column-gap: 0.2rem;
+  width: 80vw;
+}
+
+.card {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  display: grid;
+  padding: 1rem;
+  text-overflow: -o-ellipsis-lastline;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  border: 0.1rem solid black;
+  border-radius: 0.4rem;
+  width: 15rem;
+  height: 18rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bookTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.cardButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+.card p {
+  padding: 0.2rem;
+}
+.readButton {
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.author {
+  max-width: 30ch;
+}
+.bookTitle {
+  text-transform: uppercase;
+  max-width: 30ch;
+}
+.readButton:hover {
+  border-right: 2px solid black;
+  border-radius: 3rem;
+}
+.readButton + button {
+  border: none;
+  background: none;
+}
+.deleteButton {
+  width: 2rem;
+  height: 2rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.deleteButton:hover {
+  width: 3rem;
+  height: 3rem;
+}
+.addButton {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.searchButton {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 2rem;
+  right: 6rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.addDialog[open] {
+  position: fixed;
+  margin: auto;
+  inset: 0;
+  width: 11rem;
+  height: fit-content;
+  padding: 2rem;
+  z-index: 1;
+}
+
+dialog::backdrop {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.2),
+    rgba(255, 0, 0, 0.2) 1px,
+    rgba(255, 0, 0, 0.3) 1px,
+    rgba(255, 0, 0, 0.3) 20px
+  );
+}
+
+.addDialog input {
+  width: inherit;
+}
+.dialogButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.closeDialog {
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: #007bff;
+}
+.addBook {
+  margin-top: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: #007bff;
+}
+
+@keyframes example {
+  0% {
+    border-left: 2px solid #ffffff;
+  }
+  25% {
+    border-left: 3px solid #ffe6e6;
+  }
+  50% {
+    border-left: 4px solid #ff8080;
+  }
+  100% {
+    border-left: 5px solid #ff0000;
+  }
+}
