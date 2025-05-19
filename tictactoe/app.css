@@ -1,0 +1,65 @@
+:root {
+  --bg-color: #f5f4e8;
+  --red-color: #c50d66;
+  --orange-color: #f07810;
+  --yellowish-color: #eec60a;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color);
+  border: 0.5rem dashed var(--orange-color);
+  gap: 1rem;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.card {
+  background-color: var(--red-color);
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 1rem;
+}
+.card:hover {
+  cursor: pointer;
+}
+#reset {
+  padding: 1rem;
+  background-color: var(--yellowish-color);
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+.turn{
+    color: var(--orange-color);
+    font-size: 2rem;
+}
+.winner{
+    color: var(--orange-color);
+    font-size: 2rem;
+}
